@@ -1,4 +1,5 @@
 // step4: sperate the Home widget into its own file
+
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -7,103 +8,20 @@ class Home extends StatelessWidget {
 /// step5: container, column, main axis, cross axis
   @override
   Widget build(BuildContext context) {
-    // return Column(
-    //  // mainAxisAlignment: MainAxisAlignment.start,
-    //  // mainAxisAlignment: MainAxisAlignment.center,
-    //  // mainAxisAlignment: MainAxisAlignment.end,
-    //  // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-    //  // mainAxisAlignment: MainAxisAlignment.spaceAround,
-    //  // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-
-    //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-    //  crossAxisAlignment: CrossAxisAlignment.stretch,
-
-    //   children: [
-    //     Container(
-    //       color: Colors.blueAccent,
-    //       padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-    //       child: Text(
-    //         "Hello ",
-    //         style: TextStyle(
-    //           fontSize: 20,
-    //           letterSpacing: 3,
-    //           color: Colors.white,
-    //         ),
-    //         ),
-    //     ),
-    //     Container(
-    //       color: Colors.blueAccent,
-    //       padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-    //       child: Text(
-    //         "Hello ",
-    //         style: TextStyle(
-    //           fontSize: 20,
-    //           letterSpacing: 3,
-    //           color: Colors.white,
-    //         ),
-    //         ),
-    //     ),
-    //     Container(
-    //       color: Colors.blueAccent,
-    //       padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-    //       child: Text(
-    //         "Hello",
-    //         style: TextStyle(
-    //           fontSize: 20,
-    //           letterSpacing: 3,
-    //           color: Colors.white,
-    //         ),
-    //         ),
-    //     ),
-    //   ],
-    // );
-
-    return Row(
-      // mainAxisAlignment: MainAxisAlignment.start,
-      // mainAxisAlignment: MainAxisAlignment.center,
-      // mainAxisAlignment: MainAxisAlignment.end,
-      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      // mainAxisAlignment: MainAxisAlignment.spaceAround,
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    //step 6: Image widgets
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Container(
-          color: Colors.blueAccent,
-          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-          child: Text(
-            "Hello ",
-            style: TextStyle(
-              fontSize: 20,
-              letterSpacing: 3,
-              color: Colors.white,
-            ),
-            ),
-        ),
-        Container(
-          color: Colors.blueAccent,
-          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-          child: Text(
-            "Hello ",
-            style: TextStyle(
-              fontSize: 20,
-              letterSpacing: 3,
-              color: Colors.white,
-            ),
-            ),
-        ),
-        Container(
-          color: Colors.blueAccent,
-          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-          child: Text(
-            "Hello",
-            style: TextStyle(
-              fontSize: 20,
-              letterSpacing: 3,
-              color: Colors.white,
-            ),
-            ),
-        ),
+      children: 
+      [Image.asset("assets/images/arm.jpg"),
+      const SizedBox(height: 10),
+      Image.network(
+        "https://preview.redd.it/how-many-zoros-would-it-take-to-beat-gear-5-luffy-v0-65u3ed5p8n0d1.jpg?width=640&crop=smart&auto=webp&s=8675327f0bbd9a73faddba7dd4263114c36d9466"
+      )
       ],
+      
+
     );
+
   }
 }

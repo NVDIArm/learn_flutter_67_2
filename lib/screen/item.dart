@@ -31,26 +31,30 @@ class _ItemState extends State<Item> {
                 children: [
                   Text(
                     personList[index].name,
-                    style: const TextStyle(
+                    // style: const TextStyle(
+                    //   fontSize: 24,
+                    //   color: Colors.white,
+                    //   fontWeight: FontWeight.bold,
+                    // ),
+
+                    // Step 12: Use google fonts
+                    style: GoogleFonts.kanit(
                       fontSize: 24,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
+                      color: Color(0xFFFFFFFF),
                     ),
                   ),
                   Text(
-                    "Job:${personList[index].job.title}",
-                    style: const TextStyle(
+                    "job:${personList[index].job.title}",
+                    style: GoogleFonts.kanit(
                       fontSize: 18,
-                      color: Colors.white,
-                      fontWeight: FontWeight.normal,
+                      color: Color.fromARGB(255, 238, 130, 130),
                     ),
                   ),
                   Text(
                     personList[index].age.toString(),
-                    style: const TextStyle(
+                    style: GoogleFonts.kanit(
                       fontSize: 18,
-                      color: Colors.white,
-                      fontWeight: FontWeight.normal,
+                      color:  Color.fromARGB(255, 255, 1, 1),
                     ),
                   ),
                   Image.asset(

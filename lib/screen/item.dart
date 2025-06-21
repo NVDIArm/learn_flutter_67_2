@@ -18,7 +18,7 @@ class _ItemState extends State<Item> {
       itemBuilder: (context, index) {
         return Container(
           decoration: BoxDecoration(
-            color: Colors.blue,
+            color: const Color.fromARGB(255, 137, 255, 196),
             borderRadius: BorderRadius.circular(10),
           ),
           margin: const EdgeInsets.symmetric(vertical: 2, horizontal: 5),
